@@ -118,3 +118,15 @@ if "nej" in sittingDown:
     print("Här, ses någon annan gång")
     sys.exit()
     
+""" En sammanfattning av programmet är att det är en enkel kassörsprogram som tar emot beställningar 
+    för pizza och dryck, beräknar totalpriset inklusive eventuella tillägg och dricks, och ger 
+    användaren möjlighet att sitta ner och vänta på sin beställning. 
+    Programmet använder sig av if-satser för att hantera olika val och inmatningar från användaren. """
+
+
+# int = 3
+# float = 3.0
+# str = "3"
+# You can get the type of a varible by using type() ex= print(type(x))
+# A and a is different varibles, it's case sensitive
+
