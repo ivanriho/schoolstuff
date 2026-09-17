@@ -1,6 +1,6 @@
 #kommentarer, if, {}, kommatecken"
 #ska göra en kassörs
-
+import time
 
 # The menu with all the different alternatives and prices
 plainPizza = int(80)
@@ -37,6 +37,9 @@ if order == "vesuvio":
 elif order == "margarita":
     extra = input("Vill du ha nån annan topping på, vi har ost, oliver, banan och svamp. ")
 
+print("Tack för din beställning, vi kommer att börja laga den nu, ge oss några sekunder att sätta in ordern")
+
+time.sleep(5)
 
 totalSum = Margarita
 
@@ -55,11 +58,31 @@ if "banan" in extra:
 if "svamp" in extra:
     totalSum += svamp
 
+
+
+# Adding the drinking questions now
+
+cola = int(20)
+sprite = int(15)
+fanta = int(25)
+
+
+drinks = input("Vill du ha nått att dricka till? Vi har cola, fanta och sprite. ")
+
+if "cola" in drinks:
+    totalSum += cola
+if "fanta" in drinks:
+    totalSum += fanta
+if "sprite" in drinks:
+    totalSum += sprite
+
+
 #Announcing the price 
 # Setting tip variable
 
 x = int(40)
-print(f"Priset blir", totalSum, "kr, med din order som var en", order, "med", extra,)
+print(f"Priset blir", totalSum, "kr exlusive dricks, med din order som var en", order, "med", drinks,)
+
 answer = input("Vill du ge dricks till lilla mig?")
 
 if "nej" in answer:
@@ -69,7 +92,6 @@ elif "ja" in answer:
     print("tack så mycket")
 
     resultat = input("Hur mycket merci ")
-    # Konvertera texten dricksen från en string till ett heltal int för att kunna jämföra med dessa siffror
     resultat = int(resultat)
 
     if resultat >= 40:
