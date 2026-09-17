@@ -5,9 +5,8 @@ import time
 # The menu with all the different alternatives and prices
 plainPizza = int(80)
 Margarita = plainPizza + 20
-Kebabpizza = plainPizza + 60
 Vesuvio = plainPizza + 40
-Menu = [Margarita, Kebabpizza, Vesuvio]
+Menu = [Margarita, Vesuvio]
 
 # Welcomes and asks for which pizza you'd like
 print("Välkommen till våran resturang")
@@ -27,7 +26,6 @@ ost = int(10)
 oliver = int(15)
 banan = int(25)
 svamp = int(17)
-
 sås = int(12)
     
 # Depending on the pizza, the output will choose between the text without Sauce and the one with Sauce 
@@ -41,7 +39,10 @@ print("Tack för din beställning, vi kommer att börja laga den nu, ge oss någ
 
 time.sleep(5)
 
-totalSum = Margarita
+if order == "vesuvio":
+    totalSum = Vesuvio
+else: 
+    totalSum = Margarita
 
 #Will add the price of the add-ons to the pizzas total price, instead of using specific words to enter add on you can write anything you'd like 
 #Because it searches for the word inside!
@@ -58,7 +59,8 @@ if "banan" in extra:
 if "svamp" in extra:
     totalSum += svamp
 
-
+if "sås" in extra:
+    totalSum += sås
 
 # Adding the drinking questions now
 
