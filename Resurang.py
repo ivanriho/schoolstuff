@@ -1,6 +1,7 @@
 #kommentarer, if, {}, kommatecken"
 #ska göra en kassörs
 import time
+import sys
 
 # The menu with all the different alternatives and prices
 plainPizza = int(80)
@@ -108,4 +109,12 @@ time.sleep(15)
 sittingDown = input("Vill du sätta dig ner och vänta på din pizza? ")
 if "ja" in sittingDown:
     print("Perfekt, då får du sätta dig ner och vänta på din pizza, den kommer snart!")
+    time.sleep(10)
+    print("Här är din pizza! Ha en bra dag!")
+    sys.exit()
 if "nej" in sittingDown:
+    print("Oh det är väl okej ig, den kommer snart")
+    time.sleep(5)
+    print("Här, ses någon annan gång")
+    sys.exit()
+    
