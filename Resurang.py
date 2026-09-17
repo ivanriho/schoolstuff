@@ -106,7 +106,7 @@ elif "ja" in answer:
 
 time.sleep(15)
 
-sittingDown = input("Vill du sätta dig ner och vänta på din pizza? ")
+sittingDown = input("Vill du fortfarande sätta dig ner och vänta på din pizza? ")
 if "ja" in sittingDown:
     print("Perfekt, då får du sätta dig ner och vänta på din pizza, den kommer snart!")
     time.sleep(10)
