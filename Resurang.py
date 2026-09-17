@@ -97,7 +97,15 @@ elif "ja" in answer:
     resultat = int(resultat)
 
     if resultat >= 40:
-        print("Tack så mycket för att du dricksar med dina stora", resultat, "spänn")
+        print("Tack så mycket för att du dricksar med dina stora", resultat, "spänn, du får snart sätta dig!")
 
     elif resultat < 40:
-        print("Det är väl omtanken som räknas ig, tack för dina", resultat, "spänn")
+        print("Det är väl omtanken som räknas ig, tack för dina", resultat, "spänn, snart får du sätta dig om du vill")
+
+
+time.sleep(15)
+
+sittingDown = input("Vill du sätta dig ner och vänta på din pizza? ")
+if "ja" in sittingDown:
+    print("Perfekt, då får du sätta dig ner och vänta på din pizza, den kommer snart!")
+if "nej" in sittingDown:
