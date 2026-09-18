@@ -82,8 +82,10 @@ if "sprite" in drinks:
 
 #Announcing the price 
 # Setting tip variable
+# Making sure you can't tip negative
 
 x = int(40)
+y = int(0)
 print(f"Priset blir", totalSum, "kr exlusive dricks, med din order som var en", order, "med", drinks,)
 
 answer = input("Vill du ge dricks till lilla mig?")
@@ -102,6 +104,8 @@ elif "ja" in answer:
 
     elif resultat < 40:
         print("Det är väl omtanken som räknas ig, tack för dina", resultat, "spänn, snart får du sätta dig om du vill")
+
+    
 
 
 time.sleep(15)

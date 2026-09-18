@@ -1,4 +1,4 @@
-ekvation = input("Ange ditt matteproblem merci")
+ekvation = input("Ange ditt matteproblem merci ")
 
 resultat = eval(ekvation)
 
