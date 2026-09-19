@@ -12,11 +12,15 @@ Menu = [Margarita, Vesuvio]
 # Welcomes and asks for which pizza you'd like
 print("Välkommen till våran resturang")
 order = input("Vad skulle du vela beställa? ").casefold()
+if order not in Menu:
+    print("Tyvärr vi har inte den pizzan, vi har Margarita och Vesuvio")
+    sys.exit()
 
 
 
 # Saying good choice and asking when you'd want it
 # cookingTime will the be time varible that later will be used to display the time in the string
+
 print("Bra val")
 cookingTime = input("Om hur lång tid vill du ha den? ")
 print("Perfekt det passar oss båda, då kommer den om", cookingTime, "min")
@@ -35,6 +39,7 @@ if order == "vesuvio":
     extra =input("Vill du ha nån annan topping på, vi har ost, oliver, banan och svamp. För denna har vi även sås! ")
 elif order == "margarita":
     extra = input("Vill du ha nån annan topping på, vi har ost, oliver, banan och svamp. ")
+
 
 print("Tack för din beställning, vi kommer att börja laga den nu, ge oss några sekunder att sätta in ordern")
 
