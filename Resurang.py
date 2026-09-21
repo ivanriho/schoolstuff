@@ -5,17 +5,24 @@ import sys
 
 # The menu with all the different alternatives and prices
 plainPizza = int(80)
-Margarita = plainPizza + 20
+Margarita = plainPizza + 20 # 100 kr
 Vesuvio = plainPizza + 40
 Menu = [Margarita, Vesuvio]
+order_number = Vesuvio 
 
 # Welcomes and asks for which pizza you'd like
 print("Välkommen till våran resturang")
 order = input("Vad skulle du vela beställa? ").casefold()
-if order not in Menu:
-    print("Tyvärr vi har inte den pizzan, vi har Margarita och Vesuvio")
-    sys.exit()
+order_price = int(order_number)
 
+#Göra olika storlekar på pizzan
+size = input("Vilken storlek vill du ha på pizzan, vi har small, medium och large!")
+if "small" in size:
+    order = order
+elif "medium" in size:
+    order + (20)
+elif "large" in size:
+    order + int(35)
 
 
 # Saying good choice and asking when you'd want it
