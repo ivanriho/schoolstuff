@@ -7,3 +7,4 @@ for i in range(10):
     myList.append(i+1)
 
 print(myList)
+må
