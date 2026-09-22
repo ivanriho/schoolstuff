@@ -12,7 +12,7 @@ order_number = Vesuvio
 
 # Welcomes and asks for which pizza you'd like
 print("Välkommen till våran resturang")
-order = input("Vad skulle du vela beställa?", Menu).casefold()
+order = input("Vad skulle du vela beställa?").casefold()
 
 #Göra olika storlekar på pizzan
 size = input("Vilken storlek vill du ha på pizzan, vi har small, medium och large!")
@@ -21,6 +21,7 @@ if "small" in size:
 elif "medium" in size:
     order + (20)
 elif "large" in size:
+    # pyrefly: ignore [unsupported-operation]
     order + int(35)
 
 
